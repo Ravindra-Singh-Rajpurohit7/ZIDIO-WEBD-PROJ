@@ -3,8 +3,7 @@ import mongoose from "mongoose";
 const connectDB = async () => {
   try {
     const connectionInstance = await mongoose.connect(process.env.MONGODB_URI, {
-      // These options prevent deprecation warnings
-      // and configure connection pool
+      
     });
 
     console.log(
@@ -31,8 +30,7 @@ const connectDB = async () => {
     });
   } catch (error) {
     console.error("❌ MongoDB Connection FAILED:", error.message);
-    // Exit process with failure code
-    // Server cannot run without database
+    
     process.exit(1);
   }
 };
