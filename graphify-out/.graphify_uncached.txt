@@ -1,0 +1,15 @@
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\package.json
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\server.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\config\db.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\controllers\chat.controller.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\controllers\notification.controller.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\models\Message.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\models\Notification.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\routes\chat.routes.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\routes\notification.routes.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\services\notification.service.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\services\storage.service.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\socket\chat.socket.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\socket\notification.socket.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\backend\src\socket\socketInit.js
+C:\Users\HP\OneDrive\Desktop\ZIDIO-WEBD-PROJ\README.md

@@ -1,0 +1,201 @@
+{
+  "nodes": [
+    {
+      "id": "root_readme_intellmeet",
+      "label": "IntellMeet Platform",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "root_readme_mern_stack",
+      "label": "MERN Full-Stack Architecture",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "L4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "root_readme_jwt_auth",
+      "label": "JWT Authentication",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "root_readme_webrtc_video",
+      "label": "WebRTC Video Conference",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "L45",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "root_readme_socketio_chat",
+      "label": "Socket.io Real-Time Chat",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "root_readme_ai_summary",
+      "label": "AI Meeting Summary (OpenAI GPT-3.5)",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "L48",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "root_readme_team_collab",
+      "label": "Team Collaboration Workspace",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "root_readme_tailwind_ui",
+      "label": "Tailwind CSS Glassmorphic UI",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "L50",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "root_readme_hardened_security",
+      "label": "Hardened Security Middleware",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": "L51",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "root_readme_intellmeet",
+      "target": "root_readme_mern_stack",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "root_readme_intellmeet",
+      "target": "root_readme_jwt_auth",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "root_readme_intellmeet",
+      "target": "root_readme_webrtc_video",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "root_readme_intellmeet",
+      "target": "root_readme_socketio_chat",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "root_readme_intellmeet",
+      "target": "root_readme_ai_summary",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "root_readme_intellmeet",
+      "target": "root_readme_team_collab",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "root_readme_intellmeet",
+      "target": "root_readme_tailwind_ui",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "root_readme_intellmeet",
+      "target": "root_readme_hardened_security",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L51",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "realtime_communication_stack",
+      "label": "Real-Time Communication Stack",
+      "nodes": [
+        "root_readme_webrtc_video",
+        "root_readme_socketio_chat"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "README.md"
+    }
+  ],
+  "input_tokens": 1000,
+  "output_tokens": 500
+}
