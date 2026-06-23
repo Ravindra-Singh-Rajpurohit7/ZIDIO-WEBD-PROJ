@@ -4,6 +4,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.routes.js";
+import userRoutes from "./routes/user.routes.js";
 
 const app = express();
 
@@ -80,7 +81,7 @@ app.get("/health", (req, res) => {
 // Will be added in Phase 2 onwards
 // ═══════════════════════════════════════════════════════
 app.use("/api/v1/auth", authRoutes);
-// app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/users", userRoutes);
 // app.use("/api/v1/meetings", meetingRoutes);
 
 // ─── 404 HANDLER ─────────────────────────────────────

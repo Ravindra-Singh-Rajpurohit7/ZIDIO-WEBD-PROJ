@@ -10,22 +10,22 @@ const getProfile = asyncHandler(async (req, res) => {
 });
 
 const updateProfile = asyncHandler(async (req, res) => {
-    const { fullName, bio, avatar, prefrences } = req.body;
+    const { fullName, bio, avatar, preferences } = req.body;
     const allowedUpdates = {};
     if (fullName !== undefined) allowedUpdates.fullName = fullName;
     if (bio !== undefined) allowedUpdates.bio = bio;
     if (avatar !== undefined) allowedUpdates.avatar = avatar;
-    if (preferences !== undefined) allowedUpdates.preferences = prefrences;
+    if (preferences !== undefined) allowedUpdates.preferences = preferences;
     if (Object.keys(allowedUpdates).length === 0){
         throw new ApiError(400, "No valid fields porvoided to update.");
     }
 
     const updatedUser = await User.findByIdAndUpdate(
         req.user._id,
-        { $set: alllowedUpdates },
+        { $set: allowedUpdates },
         { new: true, runValidators: true}
     );
-    if(!updartedUser){
+    if(!updatedUser){
         throw new ApiError(404, "User not found.");
     }
 
