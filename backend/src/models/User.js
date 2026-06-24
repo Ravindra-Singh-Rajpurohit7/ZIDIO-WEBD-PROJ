@@ -155,7 +155,6 @@ const userSchema = new mongoose.Schema(
 // INDEXES
 // Improve query performance for frequent lookups
 // ═══════════════════════════════════════════════════════
-userSchema.index({ email: 1 }); // Login queries
 userSchema.index({ teams: 1 }); // Team member lookups
 userSchema.index({ isOnline: 1 }); // Online users list
 userSchema.index({ createdAt: -1 }); // Recent users

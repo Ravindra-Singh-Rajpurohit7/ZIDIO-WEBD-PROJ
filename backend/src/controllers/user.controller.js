@@ -34,4 +34,28 @@ const updateProfile = asyncHandler(async (req, res) => {
         .json(new ApiResponse(200, { user: updatedUser }, "Profile Updated Successfully"));
 });
 
-export { getProfile, updateProfile };
+export { getProfile, updateProfile, getAdminStats };
+
+
+// ═══════════════════════════════════════════════════════
+// ADMIN STATS (Test RBAC)
+// GET /api/v1/users/admin/stats
+// ═══════════════════════════════════════════════════════
+const getAdminStats = asyncHandler(async (req, res) => {
+    return res
+    .status(200)
+    .json(
+        new ApiResponse(
+            200,
+            {
+                stats: {
+                    totalUser: 42,
+                    activeNow: 7,
+                    signupsToday: 3,
+                },
+                adminUser: req.user.email,
+            },
+            "Admin stats retrives succesdsfully"
+        )
+    )
+});
